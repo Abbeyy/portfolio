@@ -1,0 +1,40 @@
+.image {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .image {
+        display: flex;
+        flex: 0.5;
+        height: auto;
+        width: 50%;
+    }
+
+    .image-container {
+        display: flex;
+        flex: 0.5;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .App {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+}

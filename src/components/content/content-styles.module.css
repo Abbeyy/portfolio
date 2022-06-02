@@ -1,0 +1,28 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.main {
+    text-align:left;
+    padding: 3.5rem;
+    height: 60%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .main {
+        text-align:left;
+        padding: 3.5rem;
+        height: 60%;
+    }
+}
