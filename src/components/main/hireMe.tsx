@@ -9,7 +9,7 @@ export const HireMe = () => {
       href="https://www.linkedin.com/in/abbey-ross-5198b7128"
     >
       <button className={styles["hire-me-button"]} onClick={handleOnClick}>
-        HIRE ME
+        PRESS ME FOR MAGIC
       </button>
     </a>
   );
