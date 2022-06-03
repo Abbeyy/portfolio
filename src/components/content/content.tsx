@@ -1,3 +1,4 @@
+import { HireMe } from "../main/hireMe";
 import { Header } from "../header/header";
 import { Description } from "../main/description";
 import { Snippet } from "../main/snippet";
@@ -11,6 +12,7 @@ export const Content = () => {
       <main className={styles["main"]}>
         <Snippet />
         <Description />
+        <HireMe />
       </main>
     </div>
   );

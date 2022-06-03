@@ -1,7 +1,11 @@
 .snippet-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.1rem;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #70F26C;
 }
 
 .bold-text {
@@ -12,9 +16,37 @@
     font-size: 0.75rem;
 }
 
+.career {
+    color: #70F26C;
+    padding-bottom: 0.5rem;
+}
+
 .link  {
     padding-right: 0;
     padding-left: 0.3rem;
+    color: aqua;
+    font-weight: 900;
+}
+
+.see-more {
+    color: #727272;
+}
+
+.hire-me-link {
+    padding: 0;
+}
+
+.hire-me-button {
+    padding: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    border-radius: 50px;
+    background-color: #70F26C;
+    font-size: 0.6rem;
+    border-width: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 400px) {
@@ -22,5 +54,23 @@
         font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.1rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .snippet-title {
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 2.1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .small-text {
+        font-size: 1.4rem;
+    }
+
+    .hire-me-button {
+        font-size: 1rem;
     }
 }

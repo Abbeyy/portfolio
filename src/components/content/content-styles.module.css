@@ -1,28 +1,21 @@
 .content {
     display: flex;
-    flex-direction: column;
     flex: 1;
     justify-content: center;
+    align-items: center;
 }
 
 .main {
     text-align:left;
-    padding: 3.5rem;
-    height: 60%;
+    width: 50%;
+    justify-content: center;
 }
 
-
-@media only screen and (max-width: 1200px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
-    }
-
+@media only screen and (max-width: 700px) {
     .main {
         text-align:left;
-        padding: 3.5rem;
-        height: 60%;
+        width: 50%;
+        margin-top: 1rem;
+        justify-content: center;
     }
 }
