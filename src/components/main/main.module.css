@@ -49,6 +49,14 @@
     font-weight: 900;
 }
 
+.link-panel {
+    margin-top: 2rem;
+}
+
+.link-a {
+    padding: 0;
+}
+
 @media only screen and (max-width: 400px) {
     .snippet-title {
         font-weight: 500;

@@ -1,5 +1,4 @@
 import styles from "./main.module.css";
-import colours from "../../colour-palette.module.css";
 
 export const Snippet = () => {
   return (

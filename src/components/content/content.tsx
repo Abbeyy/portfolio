@@ -4,6 +4,7 @@ import { Description } from "../main/description";
 import { Snippet } from "../main/snippet";
 
 import styles from "./content-styles.module.css";
+import { Links } from "../main/links";
 
 export const Content = () => {
   return (
@@ -12,6 +13,7 @@ export const Content = () => {
       <main className={styles["main"]}>
         <Snippet />
         <Description />
+        <Links />
         <HireMe />
       </main>
     </div>
