@@ -1,0 +1,10 @@
+.menu-title {
+    color: #70F26C;
+    border-width: 0;
+    font-weight: 600;
+    background-color: black;
+    margin-bottom: 1rem;
+    padding: 0rem;
+}
+
+.menu-item-text { font-weight: 600; }
