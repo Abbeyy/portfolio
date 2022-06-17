@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import List from "@mui/material/List";
@@ -6,12 +6,13 @@ import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import FaceRetouchingNaturalSharpIcon from "@mui/icons-material/FaceRetouchingNaturalSharp";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import LightbulbSharpIcon from "@mui/icons-material/LightbulbSharp";
 import styles from "./drawer-styles.module.css";
+import { MENU_CONTENT } from "../content/content";
+import { getTypeFromString } from "../../helpers/content";
 
 const ANCHOR = "right";
 
@@ -21,7 +22,13 @@ const icons = [
   <TimelineIcon />,
 ];
 
-export default function Drawer() {
+type Props = {
+  setContent: Dispatch<SetStateAction<MENU_CONTENT>>;
+};
+
+const Drawer = (props: Props) => {
+  const { setContent } = props;
+
   const [open, setOpen] = useState(false);
 
   const toggleDrawer =
@@ -54,7 +61,9 @@ export default function Drawer() {
       >
         {["PROFILE", "SKILLS", "EXPERIENCE"].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton
+              onClick={() => setContent(getTypeFromString(text.toLowerCase()))}
+            >
               <ListItemIcon style={{ color: "#70F26C" }}>
                 {icons[index]}
               </ListItemIcon>
@@ -65,9 +74,11 @@ export default function Drawer() {
       </List>
       <Divider style={{ borderColor: "white", borderWidth: "0.1px" }} />
       <List style={{ backgroundColor: "black", color: "white" }}>
-        {["SNIPPETS"].map((text, index) => (
+        {["SNIPPETS"].map((text) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton
+              onClick={() => setContent(getTypeFromString(text.toLowerCase()))}
+            >
               <ListItemIcon style={{ color: "#70F26C" }}>
                 <LightbulbSharpIcon />
               </ListItemIcon>
@@ -97,4 +108,6 @@ export default function Drawer() {
       </SwipeableDrawer>
     </div>
   );
-}
+};
+
+export default Drawer;
