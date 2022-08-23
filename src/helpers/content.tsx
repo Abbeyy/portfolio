@@ -9,19 +9,19 @@ export const determineContent = (content: MENU_CONTENT) => {
     case MENU_CONTENT.SKILLS:
       return (
         <>
-          <p>skills</p>
+          <p>Under construction!</p>
         </>
       );
     case MENU_CONTENT.EXPERIENCE:
       return (
         <>
-          <p>experience</p>
+          <p>Under construction!</p>
         </>
       );
     case MENU_CONTENT.SNIPPETS:
       return (
         <>
-          <p>snippets</p>
+          <p>Under construction!</p>
         </>
       );
     case MENU_CONTENT.PROFILE:
