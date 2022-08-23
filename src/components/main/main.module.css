@@ -49,12 +49,12 @@
     font-weight: 900;
 }
 
-.link-panel {
-    margin-top: 2rem;
+.link-a {
+    margin: 0;
 }
 
-.link-a {
-    padding: 0;
+.link-panel {
+    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 400px) {

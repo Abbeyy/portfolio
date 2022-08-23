@@ -4,21 +4,41 @@ import styles from "./main.module.css";
 
 export const Links = () => {
   return (
-    <a className={`${styles["link-a"]}`} href="https://github.com/Abbeyy">
-      <div className={`${styles["link-panel"]}`}>
-        <Button
-          style={{
-            color: "#70F26C",
-            backgroundColor: "black",
-            borderColor: "#70F26C",
-            borderRadius: 25,
-          }}
-          variant="outlined"
-          startIcon={<CodeIcon />}
-        >
-          Repositories
-        </Button>
-      </div>
-    </a>
+    <div className={`${styles["link-panel"]}`}>
+      <a href="https://github.com/Abbeyy">
+        <div className={`${styles["link-a"]}`}>
+          <Button
+            style={{
+              color: "#70F26C",
+              backgroundColor: "black",
+              borderColor: "#70F26C",
+              borderRadius: 25,
+            }}
+            variant="outlined"
+            startIcon={<CodeIcon />}
+            className={`${styles["link-a"]}`}
+          >
+            Repositories
+          </Button>
+        </div>
+      </a>
+      <a href="https://abbeys--player.web.app">
+        <div className={`${styles["link-a"]}`}>
+          <Button
+            style={{
+              color: "#70F26C",
+              backgroundColor: "black",
+              borderColor: "#70F26C",
+              borderRadius: 25,
+            }}
+            variant="outlined"
+            startIcon={<CodeIcon />}
+            className={`${styles["link-a"]}`}
+          >
+            ♫ Player
+          </Button>
+        </div>
+      </a>
+    </div>
   );
 };
