@@ -1,17 +1,11 @@
-import { Description } from "../components/content/description/description";
+import { Skills } from "../components/skills/skills";
 import { MENU_CONTENT } from "../components/content/content";
-import { LinkedIn } from "../components/buttons/linked-in/linkedIn";
-import { Links } from "../components/content/links/links";
-import { Snippet } from "../components/content/snippet/snippet";
+import { Profile } from "../components/profile/profile";
 
 export const determineContent = (content: MENU_CONTENT) => {
   switch (content) {
     case MENU_CONTENT.SKILLS:
-      return (
-        <>
-          <p>Under construction!</p>
-        </>
-      );
+      return <Skills />;
     case MENU_CONTENT.EXPERIENCE:
       return (
         <>
@@ -26,14 +20,7 @@ export const determineContent = (content: MENU_CONTENT) => {
       );
     case MENU_CONTENT.PROFILE:
     default:
-      return (
-        <>
-          <Snippet />
-          <Description />
-          <Links />
-          <LinkedIn />
-        </>
-      );
+      return <Profile />;
   }
 };
 

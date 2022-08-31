@@ -1,0 +1,31 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-text {
+    font-size: 1rem;
+}
+
+.link  {
+    padding-right: 0;
+    padding-left: 0.3rem;
+    color: aqua;
+    font-weight: 900;
+}
+
+.highlight {
+    color: #70F26C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.accent {
+    color: #b8b8b8;
+}
+
+@media only screen and (min-width: 1600px) {
+    .small-text {
+        font-size: 1.4rem;
+    }
+}
