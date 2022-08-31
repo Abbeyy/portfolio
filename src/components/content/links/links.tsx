@@ -1,6 +1,6 @@
 import CodeIcon from "@mui/icons-material/Code";
 import Button from "@mui/material/Button";
-import styles from "./main.module.css";
+import styles from "./links.module.css";
 
 export const Links = () => {
   return (

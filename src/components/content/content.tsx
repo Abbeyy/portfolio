@@ -1,7 +1,4 @@
-import { HireMe } from "../main/hireMe";
 import { Header } from "../header/header";
-import { Description } from "../main/description";
-import { Snippet } from "../main/snippet";
 
 import styles from "./content-styles.module.css";
 import Drawer from "../drawer/drawer";

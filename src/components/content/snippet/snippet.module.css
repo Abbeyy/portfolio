@@ -21,42 +21,6 @@
     padding-bottom: 0.5rem;
 }
 
-.link  {
-    padding-right: 0;
-    padding-left: 0.3rem;
-    color: aqua;
-    font-weight: 900;
-}
-
-.see-more {
-    color: #727272;
-}
-
-.hire-me-link {
-    padding: 0;
-}
-
-.hire-me-button {
-    padding: 1rem;
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-    border-radius: 50px;
-    background-color: #70F26C;
-    font-size: 0.6rem;
-    border-width: 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 900;
-}
-
-.link-a {
-    margin: 0;
-}
-
-.link-panel {
-    margin-top: 2rem;
-}
-
 @media only screen and (max-width: 400px) {
     .snippet-title {
         font-weight: 500;
@@ -76,9 +40,5 @@
 
     .small-text {
         font-size: 1.4rem;
-    }
-
-    .hire-me-button {
-        font-size: 1rem;
     }
 }

@@ -1,4 +1,4 @@
-import styles from "./main.module.css";
+import styles from "./snippet.module.css";
 
 export const Snippet = () => {
   return (

@@ -1,8 +1,8 @@
-import { Description } from "../components/main/description";
+import { Description } from "../components/content/description/description";
 import { MENU_CONTENT } from "../components/content/content";
-import { HireMe } from "../components/main/hireMe";
-import { Links } from "../components/main/links";
-import { Snippet } from "../components/main/snippet";
+import { LinkedIn } from "../components/buttons/linked-in/linkedIn";
+import { Links } from "../components/content/links/links";
+import { Snippet } from "../components/content/snippet/snippet";
 
 export const determineContent = (content: MENU_CONTENT) => {
   switch (content) {
@@ -31,7 +31,7 @@ export const determineContent = (content: MENU_CONTENT) => {
           <Snippet />
           <Description />
           <Links />
-          <HireMe />
+          <LinkedIn />
         </>
       );
   }
