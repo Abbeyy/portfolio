@@ -15,9 +15,9 @@ export const Snippet = () => {
       >
         WEB + MOBILE ENGINEER
       </div>
-      <div className={styles["small-text"]}>2+ YEARS COMMERCIAL EXPERIENCE</div>
+      <div className={styles["small-text"]}>3+ YEARS COMMERCIAL EXPERIENCE</div>
       <div className={styles["small-text"]}>
-        I SPECIALISE IN REACT NATIVE AND REACTJS. BASED IN CARDIFF, UK.
+        I SPECIALISE IN REACTJS AND REACT NATIVE. BASED IN CARDIFF, UK.
       </div>
       <br />
       <br />
