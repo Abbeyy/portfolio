@@ -8,22 +8,14 @@ export const Summary = () => {
         create mobile and web apps with React Native + React.
       </p>
       <p className={`${styles["small-text"]} ${styles["accent"]}`}>
-        {`My curiosity about coding stems from my childhood; experimenting with a
-        Raspberry Pi with the help of my dad and choosing Computing to study at
-        A Level.`}
+        {`My career in software started when I was young; I have fond memories of my dad helping me to code my first game on a Rspberry Pi aged 12.`}
       </p>
       <p className={styles["small-text"]}>
-        {`Fast-forward to 2020 and I graduated from Cardiff University with a 1:1 in Applied Software Engineering whilst working part-time in industry (self-sourced position).`}
+        {`Fast-forward to 2020 and I graduated from Cardiff University with a 1st in Applied Software Engineering.`}
       </p>
       <p className={`${styles["small-text"]} ${styles["accent"]}`}>
-        I have since had the pleasure of working with some wonderful people, for
-        a company creating tools to boost the consumer goods industry. I have a
-        sweep of side-projects in my
-        <a
-          className={styles["link"]}
-          href="https://abbeys--portfolio.web.app/"
-        >{`portfolio (profile page)`}</a>
-        , which demonstrate a portion of my abilities across mobile and web.
+        I have since had the pleasure of working with some wonderful people and
+        gaining great experience across an array of domains.
       </p>
     </div>
   );

@@ -1,31 +1,32 @@
 .summary {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .small-text {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.link  {
-    padding-right: 0;
-    padding-left: 0.3rem;
-    color: aqua;
-    font-weight: 900;
+.link {
+  padding-right: 0;
+  padding-left: 0.3rem;
+  color: aqua;
+  font-weight: 900;
 }
 
 .highlight {
-    color: #70F26C;
-    font-weight: 700;
-    text-transform: uppercase;
+  color: #70f26c;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .accent {
-    color: #b8b8b8;
+  color: #b8b8b8;
 }
 
 @media only screen and (min-width: 1600px) {
-    .small-text {
-        font-size: 1.4rem;
-    }
+  .small-text {
+    font-size: 1.2rem;
+  }
 }

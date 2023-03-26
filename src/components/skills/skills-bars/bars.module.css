@@ -1,24 +1,39 @@
 /* skillBar */
 .skillBar {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .skillName {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 /* skillsBars */
 
 .skillsBars {
-    display: flex;
-    flex-direction: column;
-    border-left: 0.01rem solid white;
-    padding-left: 1rem;
-    margin: 0 0 1rem 0.5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-left: 0.01rem solid white;
+  padding-left: 1rem;
+  margin: 0 0 1rem 0.5rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .skillsBars {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* width: 100%; */
+    padding-left: 0px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 2rem;
+  }
+
+  .skillBar {
+    flex: 95%;
+  }
+}
