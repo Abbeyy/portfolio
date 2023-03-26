@@ -59,7 +59,8 @@ const Drawer = (props: Props) => {
           color: "white",
         }}
       >
-        {["PROFILE", "SKILLS", "EXPERIENCE"].map((text, index) => (
+        {/* {["PROFILE", "SKILLS", "EXPERIENCE"].map((text, index) => ( */}
+        {["PROFILE", "SKILLS"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton
               onClick={() => setContent(getTypeFromString(text.toLowerCase()))}
@@ -72,7 +73,7 @@ const Drawer = (props: Props) => {
           </ListItem>
         ))}
       </List>
-      <Divider style={{ borderColor: "white", borderWidth: "0.1px" }} />
+      {/* <Divider style={{ borderColor: "white", borderWidth: "0.1px" }} />
       <List style={{ backgroundColor: "black", color: "white" }}>
         {["SNIPPETS"].map((text) => (
           <ListItem key={text} disablePadding>
@@ -86,7 +87,7 @@ const Drawer = (props: Props) => {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
     </Box>
   );
 
