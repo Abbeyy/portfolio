@@ -2,13 +2,17 @@ import { SkillBar } from "./skillBar";
 import styles from "./bars.module.css";
 
 const SKILLS = {
-  "React JS": 90,
-  "React Native": 90,
-  TypeScript: 85,
-  Redux: 75,
-  "Redux Sagas & Thunks": 70,
+  "React JS": 85,
+  "React Native": 75,
+  TypeScript: 90,
+  Tailwind: 60,
+  Redux: 70,
+  "Redux Sagas & Thunks": 80,
+  ReactQuery: 50,
+  ReactContext: 50,
   Jest: 50,
-  CSS: 60,
+  ReactTestingLibrary: 50,
+  CSS: 75,
   HTML: 85,
 };
 
