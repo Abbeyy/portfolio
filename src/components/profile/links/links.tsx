@@ -1,14 +1,20 @@
 import CodeIcon from "@mui/icons-material/Code";
 import Button from "@mui/material/Button";
 import styles from "./links.module.css";
+import { motion } from "framer-motion";
 
 export const Links = () => {
   return (
     <div className={`${styles["link-panel"]}`}>
       <a href="https://github.com/Abbeyy">
-        <div className={`${styles["link-a"]}`}>
+        <motion.div
+          whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
+          transition={{ duration: 0.3 }}
+          className={`${styles["link-a"]}`}
+        >
           <Button
             style={{
+              cursor: "pointer",
               color: "#70F26C",
               backgroundColor: "black",
               borderColor: "#70F26C",
@@ -20,12 +26,17 @@ export const Links = () => {
           >
             Repositories
           </Button>
-        </div>
+        </motion.div>
       </a>
-      <a href="https://dentistry-site.web.app/home">
-        <div className={`${styles["link-a"]}`}>
+      <a href="https://dentistry-site.web.app/">
+        <motion.div
+          whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
+          transition={{ duration: 0.3 }}
+          className={`${styles["link-a"]}`}
+        >
           <Button
             style={{
+              cursor: "pointer",
               color: "#70F26C",
               backgroundColor: "black",
               borderColor: "#70F26C",
@@ -37,9 +48,9 @@ export const Links = () => {
           >
             🦷 Dentist Clinic
           </Button>
-        </div>
+        </motion.div>
       </a>
-      <a href="https://abbeys--countries.web.app/">
+      {/* <a href="https://abbeys--countries.web.app/">
         <div className={`${styles["link-a"]}`}>
           <Button
             style={{
@@ -72,7 +83,7 @@ export const Links = () => {
             ♫ Player
           </Button>
         </div>
-      </a>
+      </a> */}
     </div>
   );
 };

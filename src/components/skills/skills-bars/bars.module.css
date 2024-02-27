@@ -12,6 +12,10 @@
 
 /* skillsBars */
 
+h4 {
+  margin-top: 0.8rem;
+}
+
 .skillsBars {
   display: flex;
   flex: 1;
@@ -25,8 +29,6 @@
   .skillsBars {
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
-    /* width: 100%; */
     padding-left: 0px;
     border: none;
     margin: 0px;

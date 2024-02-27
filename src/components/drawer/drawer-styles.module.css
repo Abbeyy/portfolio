@@ -1,5 +1,6 @@
 .menu-title {
-  color: #70f26c;
+  cursor: pointer;
+  color: #ff10f0;
   border-width: 0;
   font-weight: 600;
   background-color: black;

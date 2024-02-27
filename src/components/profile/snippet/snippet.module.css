@@ -1,44 +1,56 @@
 .snippet-title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 2.1rem;
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #70F26C;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.1rem;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #70f26c;
 }
 
 .bold-text {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .small-text {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .career {
-    color: #70F26C;
-    padding-bottom: 0.5rem;
+  color: #70f26c;
+  padding-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 400px) {
-    .snippet-title {
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.1rem;
-    }
+  .snippet-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .snippet-title {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 2.1rem;
+  }
+
+  .small-text {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
-    .snippet-title {
-        font-weight: 500;
-        font-size: 4rem;
-        line-height: 2.1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  .snippet-title {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 2.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-    .small-text {
-        font-size: 1.4rem;
-    }
+  .small-text {
+    font-size: 1.4rem;
+  }
 }

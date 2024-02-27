@@ -1,56 +1,56 @@
 .image {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: auto;
 }
 
 .image-container {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    min-width: 0;
-    height: auto;
-    max-width: 40%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+  height: auto;
+  max-width: 40%;
 }
 
 .App {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .image {
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    letter-spacing: .1rem;
+    flex: 0.5;
+    height: auto;
+    width: 50%;
   }
 
-  @media only screen and (max-width: 1200px) {
-    .image {
-        display: flex;
-        flex: 0.5;
-        height: auto;
-        width: 50%;
-    }
+  .image-container {
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    min-width: 0;
+    max-width: none;
+  }
 
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1300px) {
     .image-container {
-        display: flex;
-        flex: 0.5;
-        justify-content: center;
-        min-width: 0;
-        max-width: none;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      min-width: 0;
+      max-width: none;
     }
-
-    .App {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-    @media only screen and (min-width: 1200px) {
-        .image-container {
-            display: flex;
-            flex: 1;
-            justify-content: center;
-            min-width: 0;
-            max-width: none;
-        }
-    }
+  }
 }

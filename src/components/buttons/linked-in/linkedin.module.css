@@ -1,22 +1,33 @@
 .linked-in-link {
-    padding: 0;
+  padding: 0;
+  display: flex;
+}
+
+.svg {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .linked-in-button {
-    padding: 1rem;
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-    border-radius: 50px;
-    background-color: #70F26C;
-    font-size: 0.6rem;
-    border-width: 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 900;
+  position: absolute;
+  margin-top: 0.9rem;
+  margin-bottom: 2.4rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  border-radius: 50px;
+  background-color: #70f26c;
+  font-size: 0.7rem;
+  border-width: 0;
+  font-weight: 900;
+  z-index: 99999;
 }
 
 @media only screen and (min-width: 1600px) {
-    .linked-in-button {
-        font-size: 1rem;
-    }
+  .linked-in-button {
+    font-size: 1rem;
+  }
 }

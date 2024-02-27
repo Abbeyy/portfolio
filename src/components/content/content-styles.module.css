@@ -1,21 +1,21 @@
 .content {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
-    text-align:left;
-    width: 50%;
-    justify-content: center;
+  text-align: left;
+  width: 50%;
+  justify-content: center;
 }
 
-@media only screen and (min-width: 1200px) {
-    .main {
-        width: 50%;
-       position: relative;
-       text-align: left;
-       justify-content: center;
-    }
+@media only screen and (min-width: 1300px) {
+  .main {
+    width: 50%;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+  }
 }

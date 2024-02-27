@@ -3,13 +3,12 @@ import styles from "./bars.module.css";
 
 const SKILLS = {
   "React JS": 85,
-  "React Native": 75,
+  "React Native": 65,
   TypeScript: 90,
-  Tailwind: 60,
-  Redux: 70,
-  "Redux Sagas & Thunks": 80,
-  ReactQuery: 50,
-  ReactContext: 50,
+  Tailwind: 80,
+  "Redux, Sagas & Thunks": 75,
+  ReactQuery: 60,
+  ReactContext: 75,
   Jest: 50,
   ReactTestingLibrary: 50,
   CSS: 75,
@@ -36,7 +35,7 @@ export const SkillsBars = () => {
 
   return (
     <div className={styles["skillsBars"]}>
-      <h3>{`Here's some of the technologies I've been working with recently:`}</h3>
+      <h4>{`Here's some of the technologies I've been working with recently:`}</h4>
       {content}
     </div>
   );

@@ -1,20 +1,27 @@
 .small-text {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
-.link  {
-    padding-right: 0;
-    padding-left: 0.3rem;
-    color: aqua;
-    font-weight: 900;
+.link {
+  padding-right: 0;
+  padding-left: 0.3rem;
+  color: aqua;
+  font-weight: 900;
 }
 
 .see-more {
-    color: #727272;
+  font-size: 0.8rem;
+  color: #727272;
+}
+
+@media only screen and (min-width: 1300px) {
+  .see-more {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
-    .small-text {
-        font-size: 1.4rem;
-    }
+  .small-text {
+    font-size: 1.4rem;
+  }
 }
