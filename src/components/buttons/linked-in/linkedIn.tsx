@@ -1,5 +1,31 @@
+import { useEffect, useState } from "react";
 import styles from "./linkedin.module.css";
 import { motion } from "framer-motion";
+
+const getWindowDimensions = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+};
+
+const useWindowDimensions = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+};
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -17,6 +43,8 @@ const draw = {
 };
 
 export const LinkedIn = () => {
+  const dimensions = useWindowDimensions();
+
   return (
     <a
       className={styles["linked-in-link"]}
@@ -25,14 +53,14 @@ export const LinkedIn = () => {
       <motion.svg
         strokeWidth={1}
         className={styles["svg"]}
-        width="195"
+        width={dimensions.width < 500 ? "160" : "195"}
         height="60"
         initial="hidden"
         animate="visible"
       >
         <motion.rect
-          width="190"
-          height="55"
+          width={dimensions.width < 500 ? "155" : "190"}
+          height={dimensions.width < 500 ? "52" : "56"}
           rx="30"
           stroke="#70f26c"
           variants={draw}

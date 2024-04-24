@@ -24,7 +24,14 @@ export const Links = () => {
             startIcon={<CodeIcon />}
             className={`${styles["link-a"]}`}
           >
-            Repositories
+            <p
+              style={{
+                minWidth: "92px",
+              }}
+              className={`${styles["link-a-text"]}`}
+            >
+              Repositories
+            </p>
           </Button>
         </motion.div>
       </a>
@@ -46,7 +53,12 @@ export const Links = () => {
             startIcon={<CodeIcon />}
             className={`${styles["link-a"]}`}
           >
-            🦷 Dentist Clinic
+            <p
+              style={{ minWidth: "120px" }}
+              className={`${styles["link-a-text"]}`}
+            >
+              🦷 Dentist Clinic
+            </p>
           </Button>
         </motion.div>
       </a>

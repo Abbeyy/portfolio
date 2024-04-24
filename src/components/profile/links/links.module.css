@@ -1,7 +1,21 @@
 .link-a {
-    margin: 0;
+  margin: 0;
+}
+
+.link-a-text {
+  margin: 0;
+  height: 25px;
+  font-size: 1rem;
 }
 
 .link-panel {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .link-a-text {
+    font-size: 0.75rem;
+    margin: 0;
+    height: 18px;
+  }
 }

@@ -1,58 +1,59 @@
 .header {
-    align-items: center;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 .social-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.social-bar > div, a {
-    padding: 0.5rem;
+.social-bar > div,
+a {
+  padding: 0.5rem;
 }
 
 .social-bar-email {
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 1600px) {
-    .header {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        justify-self: flex-end;
-        width: 22%;
-    }
+  .header {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    justify-self: flex-end;
+    width: 22%;
+  }
 
-    .social-bar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-    }
+  .social-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .social-bar-email {
-        font-size: 0.5rem;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
-    }
+  .social-bar-email {
+    font-size: 0.65rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
 
-    .header {
-        right: 0.5rem;
-    }
+  .header {
+    right: 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
-    .social-bar-email {
-        font-size: 1.4rem;
-    }
+  .social-bar-email {
+    font-size: 1.4rem;
+  }
 }

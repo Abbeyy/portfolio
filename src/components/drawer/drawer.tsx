@@ -2,17 +2,16 @@ import { Dispatch, SetStateAction, useState } from "react";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import FaceRetouchingNaturalSharpIcon from "@mui/icons-material/FaceRetouchingNaturalSharp";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import TimelineIcon from "@mui/icons-material/Timeline";
-import LightbulbSharpIcon from "@mui/icons-material/LightbulbSharp";
 import styles from "./drawer-styles.module.css";
 import { MENU_CONTENT } from "../content/content";
 import { getTypeFromString } from "../../helpers/content";
+import { motion } from "framer-motion";
 
 const ANCHOR = "right";
 
@@ -93,12 +92,15 @@ const Drawer = (props: Props) => {
 
   return (
     <div>
-      <button
+      <motion.button
         className={`${styles["menu-title"]}`}
         onClick={toggleDrawer(true)}
+        whileHover={{ scale: [null, 1.5, 1.4], x: [null, 15, 12] }}
+        transition={{ duration: 0.3 }}
       >
         MENU
-      </button>
+      </motion.button>
+
       <SwipeableDrawer
         anchor={ANCHOR}
         open={open}
