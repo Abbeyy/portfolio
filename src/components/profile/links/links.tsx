@@ -35,33 +35,6 @@ export const Links = () => {
           </Button>
         </motion.div>
       </a>
-      <a href="https://dentistry-site.web.app/">
-        <motion.div
-          whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
-          transition={{ duration: 0.3 }}
-          className={`${styles["link-a"]}`}
-        >
-          <Button
-            style={{
-              cursor: "pointer",
-              color: "#70F26C",
-              backgroundColor: "black",
-              borderColor: "#70F26C",
-              borderRadius: 25,
-            }}
-            variant="outlined"
-            startIcon={<CodeIcon />}
-            className={`${styles["link-a"]}`}
-          >
-            <p
-              style={{ minWidth: "120px" }}
-              className={`${styles["link-a-text"]}`}
-            >
-              🦷 Dentist Clinic
-            </p>
-          </Button>
-        </motion.div>
-      </a>
       <a href="https://abbeys-quiz-site.web.app/">
         <motion.div
           whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
@@ -85,6 +58,33 @@ export const Links = () => {
               className={`${styles["link-a-text"]}`}
             >
               It's Quiz time baby!
+            </p>
+          </Button>
+        </motion.div>
+      </a>
+      <a href="https://dentistry-site.web.app/">
+        <motion.div
+          whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
+          transition={{ duration: 0.3 }}
+          className={`${styles["link-a"]}`}
+        >
+          <Button
+            style={{
+              cursor: "pointer",
+              color: "#70F26C",
+              backgroundColor: "black",
+              borderColor: "#70F26C",
+              borderRadius: 25,
+            }}
+            variant="outlined"
+            startIcon={<CodeIcon />}
+            className={`${styles["link-a"]}`}
+          >
+            <p
+              style={{ minWidth: "120px" }}
+              className={`${styles["link-a-text"]}`}
+            >
+              🦷 Dentist Clinic
             </p>
           </Button>
         </motion.div>
