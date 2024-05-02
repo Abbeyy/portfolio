@@ -57,7 +57,34 @@ export const Links = () => {
               style={{ minWidth: "120px" }}
               className={`${styles["link-a-text"]}`}
             >
-              It's Quiz time baby!
+              🎤 Ittttttts Quiz time!
+            </p>
+          </Button>
+        </motion.div>
+      </a>
+      <a href="https://abbeys--player.web.app/login">
+        <motion.div
+          whileHover={{ scale: [null, 1.5, 1.4], x: [0, 85, 70] }}
+          transition={{ duration: 0.3 }}
+          className={`${styles["link-a"]}`}
+        >
+          <Button
+            style={{
+              cursor: "pointer",
+              color: "#70F26C",
+              backgroundColor: "black",
+              borderColor: "#70F26C",
+              borderRadius: 25,
+            }}
+            variant="outlined"
+            startIcon={<CodeIcon />}
+            className={`${styles["link-a"]}`}
+          >
+            <p
+              style={{ minWidth: "120px" }}
+              className={`${styles["link-a-text"]}`}
+            >
+              🎶 EchoSpace
             </p>
           </Button>
         </motion.div>
@@ -106,23 +133,7 @@ export const Links = () => {
           </Button>
         </div>
       </a>
-      <a href="https://abbeys--player.web.app">
-        <div className={`${styles["link-a"]}`}>
-          <Button
-            style={{
-              color: "#70F26C",
-              backgroundColor: "black",
-              borderColor: "#70F26C",
-              borderRadius: 25,
-            }}
-            variant="outlined"
-            startIcon={<CodeIcon />}
-            className={`${styles["link-a"]}`}
-          >
-            ♫ Player
-          </Button>
-        </div>
-      </a> */}
+      */}
     </div>
   );
 };
